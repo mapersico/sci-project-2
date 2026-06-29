@@ -11,7 +11,7 @@ export function FloatingNav({ sections, activeSection, scrollTo }: Props) {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
 
   return (
-    <nav className="fixed right-4 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-3 items-center">
+    <nav className="hidden sm:flex fixed right-4 top-1/2 -translate-y-1/2 z-50 flex-col gap-3 items-center">
       {sections.map((section, i) => (
         <button
           key={section.id}
